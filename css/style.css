@@ -1,0 +1,74 @@
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+html{
+    font-size: 62.5%; /* 16px  * 62.5% = 1.000 */
+}
+body{
+    font: 1.6rem 'Poppins', sans-serif;
+    margin: 0;
+    background-color: rgba(52, 73, 94,1.0);
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 200;
+}
+img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* 
+theme 
+La palette couleur
+typo
+*/
+:root{
+    --bgc-primary: rgba(44, 62, 80,1.0);
+    --bgc-secondary: rgba(52, 73, 94,1.0);
+    --bgc-last: rgba(127, 140, 141,1.0);
+    --color-text: #fff;
+}
+header h1, section h2{
+    line-height: 9.0rem;
+    text-align: center;
+    color: var(--color-text);
+    background-color: var(--bgc-primary);
+}
+main section{
+    max-width: 120rem;
+    margin: 5rem auto;
+    background-color: var(--bgc-primary);
+}
+section h2{
+    line-height: 6.0rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+section ul{
+    overflow: hidden;
+    padding: 1rem 0 0 1rem;   
+}
+section ul li{
+    width: calc(100% / 4 - 1rem);
+    display: block;
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+section ul li:nth-of-type(5), section ul li:nth-of-type(6){
+    width: calc(100% / 2 - 1rem);
+}
+footer p{
+    text-align: center;
+    color: var(--color-text);
+}
