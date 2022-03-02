@@ -58,6 +58,7 @@ main section{
     max-width: 120rem;
     margin: 5rem auto;
     background-color: var(--bgcolor-text);
+    box-shadow: 0 0 2rem var(--bgcolor-secondary);
 }
 section ul{
     font-size: 0;
