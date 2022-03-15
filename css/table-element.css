@@ -34,40 +34,50 @@ img{
     theme css 
 */
 header h1{
-    line-height: 6.0rem;
+    line-height: 7rem;
     text-align: center;
-    background: #000;
-    color: #fafafa;
-}
-
-.table{
-    max-width: 120rem;
-    margin: 5rem auto 2rem;
-    background-color: #fff;
-    display: table;
-    border-collapse: separate;
-    border-spacing: 1rem;
+    font-weight: 300;
     
 }
-.table ul:nth-child(1){
-   display: table-row;
-   font-size: 0;
+.table-element{
+    max-width: 120rem;
+    margin: 5rem auto 1rem;
+   
+    
+    
 }
-.table ul:nth-child(1) li{
-    display: table-cell;
-    width: calc(100% / 4);
+.table-element table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fafafa;
+   
 }
-.table ul:nth-child(2){
-    display: table-row;
-    font-size: 0;
- }
-.table ul:nth-child(2) li{
-    display: table-cell;
-    width: calc(100% / 4);
+.table-element table caption{
+    line-height: 4.5rem;
+    text-transform: uppercase;
+}
+.table-element table th .material-icons{
+    vertical-align: middle;
+}
+.table-element table :is(tr,td,th){
+    border: solid .1rem #ccc;
+    line-height: 3.5rem;
+    padding: .4rem;
 }
 
-/* footer */
-
+.table-element table :is(thead, tfoot){
+    background-color: #3b5998;
+}
+.table-element table :is(thead th, tfoot th){
+    color: #fafafa;
+    text-transform: uppercase;
+}
+.table-element table tbody tr:nth-child(2n + 1){ /* odd even */
+    background-color: #8b9dc3;
+}
+/* 
+footer 
+*/
 footer details{
     max-width: 40rem;
     margin: auto;
@@ -76,7 +86,7 @@ footer details{
 details > summary {
     text-align: center;
     padding: 0.2rem;
-    background-color: #c38647;
+    background-color: #3b5998;
     border: none;
     box-shadow: .3rem .3rem .4rem rgb(126, 125, 125);
     list-style: none;
@@ -84,7 +94,7 @@ details > summary {
 }
 details > summary::before{
     content: " + ";
-    color: #222;
+    color: #fff;
 }
 details[open] > summary::before{
     content: " - ";
