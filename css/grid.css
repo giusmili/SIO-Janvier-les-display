@@ -1,0 +1,104 @@
+/*
+    reset css
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+html{
+    font-size: 62.5%; /* 16px  * 62.5% = 1.000 */
+}
+body{
+    font: 1.6rem 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #55acee 0%, #ffffff 100%)no-repeat scroll center center;
+    
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 200;
+}
+img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+*{
+    box-sizing: border-box;
+}
+/* 
+    theme css 
+*/
+header h1{
+    line-height: 6.0rem;
+    text-align: center;
+    background: #000;
+    color: #fafafa;
+}
+header h1 span{
+    display: inline-block;
+    width: 4rem;
+}
+header h1 span img{
+    filter: invert(100%);
+}
+header h1::before{
+    /* content: url(../asset/twitter.svg);
+    vertical-align: -.9rem;
+    margin-right: .4rem;
+    filter: invert(100%); */
+}
+.grid{
+    max-width: 120rem;
+    margin:5rem auto 2rem;
+}
+.grid ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+    border: solid .1rem #ccc;
+    background-color: #fff;
+    gap: 1rem;
+}
+.grid ul li:nth-child(5){
+    grid-column: 1 / 3;
+}
+.grid ul li:nth-child(6){
+    grid-column: 3 / 5;
+}
+footer details{
+    max-width: 40rem;
+    margin: auto;
+    cursor: pointer;
+}
+details > summary {
+    text-align: center;
+    padding: 0.2rem;
+    background-color: #c38647;
+    border: none;
+    box-shadow: .3rem .3rem .4rem rgb(126, 125, 125);
+    list-style: none;
+    color: #fff;
+}
+details > summary::before{
+    content: " + ";
+    color: #222;
+}
+details[open] > summary::before{
+    content: " - ";
+  } 
+details > summary::-webkit-details-marker { /* for Chrome */
+    display: none;
+}
+  
+details > p {
+    border-radius: 0 0 1rem 1rem;
+    background-color: #b4daf7;
+    padding: .2rem .6rem;
+    margin: 0;
+    box-shadow: .3rem .3rem .4rem rgb(126, 125, 125);;
+}
